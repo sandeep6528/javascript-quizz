@@ -2,14 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Quizz Game</title>
+    <script src="script.js"></script>
 </head>
 <body>
-    <h1>javascriptquizz</h1>
-    <h2>quesrions</h2>
- <script src="./script.js"></script>
+     <header>
+       <a href="">View High score</a>
+
+       <span>
+        Time: <span id="time">0</span>
+       </span>
+     </header>
+
+     <div id="start" class="start">
+        <h2> Coding Quizz Challenge</h2>
+        <p>
+            Hello
+        </p>
+
+        <button onclick="startQuizz()">
+            Start Quizz
+        </button>
+     </div>
+
+     <div id="game" class="game">
+        <h2 id="question">Sample</h2>
+        <div id="answers">
+            <button id="answer-1">answer-1</button>
+            <button id="answer-2">answer-2</button>
+            <button id="answer-3">answer-3</button>
+            <button id="answer-4">answer-4</button>  
+        </div>
+     </div>
+
+     <div id="save-high-score" class="save-high-score">
+        <h2>All Done!</h2>
+       <p>Your final score is <span id="score">0</span></p>
+       <form onsubmit="submitHighScore()">
+        <label for="">Enter initials:</label>
+        <input type="text" name="initials">
+        <button type="submit">Submit</button> 
+       </form>
+     </div>
+
+     <div id="high-scores" class="high-scores">
+        <h2>High Scores</h2>
+        <ul>
+            <li>1. Name - 0</li>
+        </ul>
+        <button onclick="goBack()">Go Back</button>
+        <button onclick="clearScores()">Clear High Scores</button>
+     </div>
 </body>
-</html>1
+</html>
