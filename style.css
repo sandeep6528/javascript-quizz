@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game,
+.save-high-score,
+.high-scores {
+    display: none;
+}
+   
