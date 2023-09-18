@@ -28,30 +28,23 @@
      </div>
 
      <div id="game" class="game">
-        <h2 id="question">Sample</h2>
-        <div id="answers">
-            <button id="answer-1">answer-1</button>
-            <button id="answer-2">answer-2</button>
-            <button id="answer-3">answer-3</button>
-            <button id="answer-4">answer-4</button>  
-        </div>
+        <h2 id="question"></h2>
+        <div id="answers"></div>
      </div>
 
      <div id="save-high-score" class="save-high-score">
         <h2>All Done!</h2>
        <p>Your final score is <span id="score">0</span></p>
-       <form onsubmit="submitHighScore()">
+       <form onsubmit="submitHighScore(event)">
         <label for="">Enter initials:</label>
-        <input type="text" name="initials">
+        <input type="text" name="initials" required>
         <button type="submit">Submit</button> 
        </form>
      </div>
 
      <div id="high-scores" class="high-scores">
         <h2>High Scores</h2>
-        <ul>
-            <li>1. Name - 0</li>
-        </ul>
+        <ul id="high-scores-list"> </ul>
         <button onclick="goBack()">Go Back</button>
         <button onclick="clearScores()">Clear High Scores</button>
      </div>
