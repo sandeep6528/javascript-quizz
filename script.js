@@ -155,7 +155,7 @@ showHighScores();
 
  function showHighScores(){
     highScores.sort(function(a, b){return b.score-a.score});
-    
+
       const highScoresHtml = highScores.map(function (item, index) {
         return '<li class="high-scores-item">' + (index + 1) + '.' + item.initials + '-' + item.score + '</li>';  
       });
@@ -165,3 +165,18 @@ showHighScores();
   
  }
 
+ function viewHighScore(){
+    const saveHighScore = document.getElementById('save-high-score');
+ saveHighScore.style.display = 'none';
+
+ const game = document.getElementById('game');
+ game.style.display = 'none';
+
+
+ const start = document.getElementById('start');
+ start.style.display = 'none';
+
+ const highScoresElement = document.getElementById('high-scores');
+ highScoresElement.style.display = 'block';
+
+ }
