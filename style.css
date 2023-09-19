@@ -1,11 +1,70 @@
-header {
-    display: flex;
-    justify-content: space-between;
-}
 
 .game,
 .save-high-score,
 .high-scores {
     display: none;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: 0 auto;
+}
+
+header > span[onclick] {
+    color: #bd60e7;
+    cursor: pointer;
+}
+
+button {
+    background: #351c75;
+    border: none;
+    border-radius: 0.3rem;
+    color: white;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+button:hover {
+    background: #bd60e7;
+}
+
+.game,
+.save-high-score,
+.high-scores {
+    display: none;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.start {
+    text-align: center;
+}
+
+.answer-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+form input[type="text"] {
+    padding: 0.3rem;
+}
+
+.high-scores ul {
+    list-style: none;
+    padding: 0;
+}
+
+.high-scores-item {
+    background: #6f4e7d;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+
    

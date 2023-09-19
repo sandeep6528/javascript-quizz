@@ -6,43 +6,44 @@ let highScores = [];
 const timeElement = document.getElementById('time');
 const questions = [
 {
-    question: 'sampleq1',
+    question: 'How can you get the type of arguments passed to a function?',
     answer: 0,
     answers: [
-        'answer1',
-        'answer2',
-        'answer3',
-        'answer4'
+        ' using typeof operator',
+        ' using getType function ',
+        ' Both of the above.',
+        'None of the above.'
     ]
 },
 {
-    question: 'sampleq2',
+    question: 'Which built-in method removes the last element from an array and returns that element?',
+    answer: 1,
+    answers: [
+        'answer1',
+        ' pop()',
+        'get()',
+        'last()'
+    ]
+},
+{
+    question: 'Which of the following function of String object creates an HTML anchor that is used as a hypertext target?',
     answer: 2,
     answers: [
         'answer1',
-        'answer2',
-        'answer3',
-        'answer4'
+        ' link()',
+        'anchor()',
+        ' blink()'
     ]
 },
 {
-    question: 'sampleq3',
-    answer: 2,
-    answers: [
-        'answer1',
-        'answer2',
-        'answer3',
-        'answer4'
-    ]
-},
-{
-    question: 'sampleq4',
+    question: 'How can we change the background color of an element?',
+    
     answer: 3,
     answers: [
-        'answer1',
-        'answer2',
-        'answer3',
-        'answer4'
+        'margin',
+        'color',
+        'None Of Above',
+        'background-color'
     ]
 }
 ];
